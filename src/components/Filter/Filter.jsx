@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { InputStyled } from './FilterStyled';
 
-const Filter = ({ value, handleOnChangeFilter }) => {
+const Filter = ({ value, handleOnChangeFilter }) => {  
   return (
     <>
       <h3>Find contacts by name</h3>
@@ -15,6 +15,7 @@ const Filter = ({ value, handleOnChangeFilter }) => {
 
 Filter.propTypes = {  
   handleOnChangeFilter: PropTypes.func.isRequired,
+  value: PropTypes.string.isRequired
 };
 
 export default Filter;
